@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مزاجنجي | المنيو</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c0906;
+    --bg2:#17110b;
+    --flame1:#ff7a1a;
+    --flame2:#ff3d1a;
+    --cream:#f3e7d8;
+    --muted:#a89480;
+    --line:#352419;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{background:var(--bg); color:var(--cream); font-family:'Tajawal',sans-serif;}
+  body{min-height:100%;}
+
+  .hero{
+    position:relative;
+    padding:38px 20px 28px;
+    text-align:center;
+    background:
+      radial-gradient(120% 90% at 50% 0%, rgba(255,90,20,.25), transparent 60%),
+      linear-gradient(180deg, var(--bg2), var(--bg));
+    border-bottom:1px solid var(--line);
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";
+    position:absolute; inset:-40% -10% auto -10%;
+    height:140%;
+    background:radial-gradient(closest-side, rgba(255,122,26,.35), transparent 70%);
+    filter:blur(10px);
+    pointer-events:none;
+  }
+  .logo{
+    position:relative;
+    display:block;
+    margin:0 auto;
+    width:180px;
+    height:auto;
+    filter:drop-shadow(0 6px 18px rgba(255,90,20,.35));
+  }
+  .brand{
+    position:relative;
+    font-family:'Cairo',sans-serif;
+    font-weight:900;
+    font-size:42px;
+    letter-spacing:1px;
+    background:linear-gradient(180deg, #ffd9a8, var(--flame1) 55%, var(--flame2));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    line-height:1.15;
+  }
+  .brand small{
+    display:block;
+    font-family:'Tajawal',sans-serif;
+    font-weight:500;
+    font-size:14px;
+    letter-spacing:2px;
+    color:var(--muted);
+    -webkit-text-fill-color:var(--muted);
+    margin-top:6px;
+  }
+  .contact{
+    position:relative;
+    margin-top:16px;
+    font-size:13px;
+    color:var(--muted);
+    direction:ltr;
+    display:flex; justify-content:center; gap:14px; flex-wrap:wrap;
+  }
+
+  nav{
+    position:sticky; top:0; z-index:5;
+    display:flex; gap:8px; overflow-x:auto;
+    padding:12px 16px;
+    background:rgba(12,9,6,.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  nav::-webkit-scrollbar{display:none;}
+  nav a{
+    flex:0 0 auto;
+    color:var(--muted);
+    text-decoration:none;
+    font-size:14px;
+    font-weight:700;
+    padding:8px 16px;
+    border-radius:999px;
+    border:1px solid var(--line);
+    white-space:nowrap;
+  }
+  nav a.active{
+    color:#1a0e06;
+    background:linear-gradient(135deg, var(--flame1), var(--flame2));
+    border-color:transparent;
+  }
+
+  main{max-width:640px; margin:0 auto; padding:10px 18px 60px;}
+
+  section.cat{padding-top:30px; scroll-margin-top:68px;}
+  .cat h2{
+    font-family:'Cairo',sans-serif;
+    font-weight:800;
+    font-size:24px;
+    color:var(--flame1);
+    display:flex; align-items:center; gap:10px;
+  }
+  .cat h2::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:linear-gradient(to left, var(--line), transparent);
+  }
+  .cat .note{color:var(--muted); font-size:13px; margin-top:4px;}
+
+  .item{
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+    padding:14px 0;
+    border-bottom:1px dashed var(--line);
+  }
+  .item .name{font-size:16px; font-weight:500; color:var(--cream);}
+  .item .sub{display:block; font-size:12.5px; color:var(--muted); font-weight:400; margin-top:2px;}
+  .item .dots{flex:1; border-bottom:1px dotted #4a3626; transform:translateY(-4px);}
+  .item .price{
+    font-family:'Cairo',sans-serif;
+    font-weight:800;
+    font-size:17px;
+    color:#ffd9a8;
+    white-space:nowrap;
+  }
+  .item .price small{font-size:11px; color:var(--muted); font-weight:500;}
+
+  .placeholder{
+    margin-top:30px;
+    padding:18px;
+    border:1px dashed var(--line);
+    border-radius:10px;
+    color:var(--muted);
+    font-size:13.5px;
+    text-align:center;
+  }
+
+  footer{
+    text-align:center;
+    padding:26px 20px 40px;
+    color:var(--muted);
+    font-size:12.5px;
+    border-top:1px solid var(--line);
+  }
+  footer b{color:var(--cream);}
+
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){ }
+  }
+</style>
+</head>
+<body>
+
+  <div class="hero">
+    <img class="logo" 
