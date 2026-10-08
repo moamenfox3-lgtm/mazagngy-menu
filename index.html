@@ -49,28 +49,6 @@
     height:auto;
     filter:drop-shadow(0 6px 18px rgba(255,90,20,.35));
   }
-  .brand{
-    position:relative;
-    font-family:'Cairo',sans-serif;
-    font-weight:900;
-    font-size:42px;
-    letter-spacing:1px;
-    background:linear-gradient(180deg, #ffd9a8, var(--flame1) 55%, var(--flame2));
-    -webkit-background-clip:text;
-    background-clip:text;
-    color:transparent;
-    line-height:1.15;
-  }
-  .brand small{
-    display:block;
-    font-family:'Tajawal',sans-serif;
-    font-weight:500;
-    font-size:14px;
-    letter-spacing:2px;
-    color:var(--muted);
-    -webkit-text-fill-color:var(--muted);
-    margin-top:6px;
-  }
   .contact{
     position:relative;
     margin-top:16px;
@@ -124,7 +102,6 @@
     height:1px;
     background:linear-gradient(to left, var(--line), transparent);
   }
-  .cat .note{color:var(--muted); font-size:13px; margin-top:4px;}
 
   .item{
     display:flex;
@@ -134,7 +111,6 @@
     border-bottom:1px dashed var(--line);
   }
   .item .name{font-size:16px; font-weight:500; color:var(--cream);}
-  .item .sub{display:block; font-size:12.5px; color:var(--muted); font-weight:400; margin-top:2px;}
   .item .dots{flex:1; border-bottom:1px dotted #4a3626; transform:translateY(-4px);}
   .item .price{
     font-family:'Cairo',sans-serif;
@@ -163,13 +139,44 @@
     border-top:1px solid var(--line);
   }
   footer b{color:var(--cream);}
-
-  @media (prefers-color-scheme: light){
-    :root:not([data-theme="dark"]){ }
-  }
 </style>
 </head>
 <body>
 
   <div class="hero">
-    <img class="logo" 
+    <img class="logo" src="data:image/png;base64,ضع_هنا_كود_اللوجو_بتاعك" alt="مزاجنجي">
+    <div class="contact">
+      <span>📞 01277752153</span>
+      <span>01042885132</span>
+      <span>01107458803</span>
+    </div>
+  </div>
+
+  <nav id="catNav">
+    <a href="#sandwitshat" class="active">السندوتشات</a>
+    <a href="#masu">وجبات الماسو</a>
+    <a href="#araby">الشاورما العربي</a>
+    <a href="#fatta">فتة شاورما</a>
+    <a href="#rezo">وجبات الريزو</a>
+    <a href="#crepe-hady">كريب حادق</a>
+    <a href="#crepe-helw">كريب حلو</a>
+    <a href="#salatat">سلطات ومخللات</a>
+    <a href="#tawagen">طواجن مزاجنجي</a>
+    <a href="#fino">تكلفة الفينو</a>
+  </nav>
+
+  <main>
+    <section class="cat" id="sandwitshat">
+      <h2>السندوتشات</h2>
+      <div class="item"><span class="name">شاورما فراخ</span><span class="dots"></span><span class="price">60</span></div>
+      <div class="item"><span class="name">برجر سادة</span><span class="dots"></span><span class="price">50</span></div>
+      <!-- باقي الأصناف بنفس الشكل -->
+    </section>
+  </main>
+
+  <footer>
+    يوجد صالات عائلية مكيفة — <b>المحور المركزي، مول نعمه</b>
+  </footer>
+
+</body>
+</html>
