@@ -102,6 +102,7 @@
     height:1px;
     background:linear-gradient(to left, var(--line), transparent);
   }
+  .cat .note{color:var(--muted); font-size:13px; margin-top:4px;}
 
   .item{
     display:flex;
@@ -111,6 +112,7 @@
     border-bottom:1px dashed var(--line);
   }
   .item .name{font-size:16px; font-weight:500; color:var(--cream);}
+  .item .sub{display:block; font-size:12.5px; color:var(--muted); font-weight:400; margin-top:2px;}
   .item .dots{flex:1; border-bottom:1px dotted #4a3626; transform:translateY(-4px);}
   .item .price{
     font-family:'Cairo',sans-serif;
@@ -120,16 +122,6 @@
     white-space:nowrap;
   }
   .item .price small{font-size:11px; color:var(--muted); font-weight:500;}
-
-  .placeholder{
-    margin-top:30px;
-    padding:18px;
-    border:1px dashed var(--line);
-    border-radius:10px;
-    color:var(--muted);
-    font-size:13.5px;
-    text-align:center;
-  }
 
   footer{
     text-align:center;
@@ -144,7 +136,7 @@
 <body>
 
   <div class="hero">
-    <img class="logo" src="data:image/png;base64,ضع_هنا_كود_اللوجو_بتاعك" alt="مزاجنجي">
+    <img class="logo" src="logo.png" alt="مزاجنجي">
     <div class="contact">
       <span>📞 01277752153</span>
       <span>01042885132</span>
@@ -168,14 +160,149 @@
   <main>
     <section class="cat" id="sandwitshat">
       <h2>السندوتشات</h2>
-      <div class="item"><span class="name">شاورما فراخ</span><span class="dots"></span><span class="price">60</span></div>
+      <div class="item"><span class="name">شاورما فراخ</span><span class="dots"></span><span class="price">60-110 <small>حسب الخبز</small></span></div>
+      <div class="item"><span class="name">شاورما لحمه</span><span class="dots"></span><span class="price">50-100 <small>حسب الخبز</small></span></div>
+      <div class="item"><span class="name">شاورما ميكس</span><span class="dots"></span><span class="price">60-110 <small>حسب الخبز</small></span></div>
       <div class="item"><span class="name">برجر سادة</span><span class="dots"></span><span class="price">50</span></div>
-      <!-- باقي الأصناف بنفس الشكل -->
+      <div class="item"><span class="name">برجر جبنه</span><span class="dots"></span><span class="price">65</span></div>
+      <div class="item"><span class="name">برجر بيض</span><span class="dots"></span><span class="price">70</span></div>
+      <div class="item"><span class="name">برجر ميكس</span><span class="dots"></span><span class="price">75</span></div>
+      <div class="item"><span class="name">كفته</span><span class="dots"></span><span class="price">60-110 <small>حسب الخبز</small></span></div>
+      <div class="item"><span class="name">فراخ بانيه</span><span class="dots"></span><span class="price">70-110 <small>حسب الخبز</small></span></div>
+      <div class="item"><span class="name">فراخ كريسبي</span><span class="dots"></span><span class="price">70-120 <small>حسب الخبز</small></span></div>
+      <div class="item"><span class="name">فراخ زينجر</span><span class="dots"></span><span class="price">70-120 <small>حسب الخبز</small></span></div>
+      <div class="item"><span class="name">فراخ استربس</span><span class="dots"></span><span class="price">70-120 <small>حسب الخبز</small></span></div>
+      <div class="item"><span class="name">شيش طاووق</span><span class="dots"></span><span class="price">70-120 <small>حسب الخبز</small></span></div>
+      <div class="item"><span class="name">بطاطس سادة</span><span class="dots"></span><span class="price">30-55 <small>حسب الحجم</small></span></div>
+      <div class="item"><span class="name">بطاطس مونتزريلا</span><span class="dots"></span><span class="price">40-65 <small>حسب الحجم</small></span></div>
+      <div class="item"><span class="name">بطاطس شيدر</span><span class="dots"></span><span class="price">40-65 <small>حسب الحجم</small></span></div>
     </section>
-  </main>
+
+<section class="cat" id="masu">
+      <h2>وجبات الماسو</h2>
+      <div class="item"><span class="name">وجبة شاورما لحمه<span class="sub">أرز + 4 قطعة سوري عربي + تومية وبطاطس ومخلل</span></span><span class="dots"></span><span class="price">190</span></div>
+      <div class="item"><span class="name">وجبة شاورما فراخ<span class="sub">أرز + 4 قطعة سوري عربي + تومية وبطاطس ومخلل</span></span><span class="dots"></span><span class="price">175</span></div>
+      <div class="item"><span class="name">وجبة كريسبي<span class="sub">أرز + 4 قطعة سوري عربي + تومية وبطاطس ومخلل</span></span><span class="dots"></span><span class="price">160</span></div>
+      <div class="item"><span class="name">وجبة ميكس فراخ<span class="sub">كريسبي + شاورما فراخ + أرز + 4 قطعة عربي</span></span><span class="dots"></span><span class="price">200</span></div>
+      <div class="item"><span class="name">وجبة ميكس مزجنجي<span class="sub">لحمه + فراخ + كريسبي + سوري عربي + أرز</span></span><span class="dots"></span><span class="price">210</span></div>
+      </section>
+
+    <section class="cat" id="araby">
+      <h2>الشاورما العربي</h2>
+      <div class="cat note">تقدم الوجبات مع بطاطس وتومية ومخلل</div>
+      <div class="item"><span class="name">وجبة عربي شاورما لحمه</span><span class="dots"></span><span class="price">160</span></div>
+      <div class="item"><span class="name">وجبة عربي شاورما فراخ</span><span class="dots"></span><span class="price">140</span></div>
+      <div class="item"><span class="name">وجبة عربي شاورما ميكس</span><span class="dots"></span><span class="price">150</span></div>
+      </section>
+
+    <section class="cat" id="fatta">
+      <h2>فتة شاورما</h2>
+      <div class="item"><span class="name">فتة شاورما لحمه</span><span class="dots"></span><span class="price">130</span></div>
+      <div class="item"><span class="name">فتة شاورما فراخ</span><span class="dots"></span><span class="price">110</span></div>
+      <div class="item"><span class="name">فتة شاورما ميكس</span><span class="dots"></span><span class="price">120</span></div>
+      </section>
+
+    <section class="cat" id="edafat">
+      <h2>الاضافات</h2>
+      <div class="item"><span class="name">شاورما لحمه</span><span class="dots"></span><span class="price">50</span></div>
+      <div class="item"><span class="name">شاورما فراخ</span><span class="dots"></span><span class="price">40</span></div>
+      <div class="item"><span class="name">قطعة كريسبي</span><span class="dots"></span><span class="price">30</span></div>
+      <div class="item"><span class="name">قطعة بانيه</span><span class="dots"></span><span class="price">30</span></div>
+      <div class="item"><span class="name">قطعة زينجر</span><span class="dots"></span><span class="price">30</span></div>
+      <div class="item"><span class="name">قطعة استربس</span><span class="dots"></span><span class="price">30</span></div>
+      <div class="item"><span class="name">جبنة مونتزريلا</span><span class="dots"></span><span class="price">20</span></div>
+      <div class="item"><span class="name">جبنة رومي</span><span class="dots"></span><span class="price">20</span></div>
+      <div class="item"><span class="name">جبنة شيدر</span><span class="dots"></span><span class="price">20</span></div>
+      <div class="item"><span class="name">جبنة كيري</span><span class="dots"></span><span class="price">20</span></div>
+      <div class="item"><span class="name">بطاطس</span><span class="dots"></span><span class="price">20</span></div>
+      </section>
+
+    <section class="cat" id="rezo">
+      <h2>وجبات الريزو</h2>
+      <div class="item"><span class="name">ريزو شاورما لحمه</span><span class="dots"></span><span class="price">100</span></div>
+      <div class="item"><span class="name">ريزو شاورما فراخ</span><span class="dots"></span><span class="price">90</span></div>
+      <div class="item"><span class="name">ريزو شاورما ميكس</span><span class="dots"></span><span class="price">95</span></div>
+      <div class="item"><span class="name">ريزو شيش</span><span class="dots"></span><span class="price">85</span></div>
+      <div class="item"><span class="name">ريزو كريسبي</span><span class="dots"></span><span class="price">85</span></div>
+      <div class="item"><span class="name">ريزو زينجر</span><span class="dots"></span><span class="price">85</span></div>
+      <div class="item"><span class="name">ريزو استربس سادة</span><span class="dots"></span><span class="price">35</span></div>
+      </section>
+
+    <section class="cat" id="crepe-hady">
+      <h2>كريب حادق</h2>
+      <div class="item"><span class="name">شاورما لحمه</span><span class="dots"></span><span class="price">150</span></div>
+      <div class="item"><span class="name">شاورما فراخ</span><span class="dots"></span><span class="price">130</span></div>
+      <div class="item"><span class="name">شاورما ميكس</span><span class="dots"></span><span class="price">140</span></div>
+      <div class="item"><span class="name">بانيه</span><span class="dots"></span><span class="price">120</span></div>
+      <div class="item"><span class="name">كريسبي</span><span class="dots"></span><span class="price">120</span></div>
+      <div class="item"><span class="name">زينجر</span><span class="dots"></span><span class="price">120</span></div>
+      <div class="item"><span class="name">استربس</span><span class="dots"></span><span class="price">120</span></div>
+      <div class="item"><span class="name">شيش طاووق</span><span class="dots"></span><span class="price">120</span></div>
+      <div class="item"><span class="name">برجر</span><span class="dots"></span><span class="price">110</span></div>
+      <div class="item"><span class="name">كفته</span><span class="dots"></span><span class="price">110</span></div>
+      <div class="item"><span class="name">ميكس فراخ<span class="sub">شاورما + بانيه + زينجر</span></span><span class="dots"></span><span class="price">150</span></div>
+      <div class="item"><span class="name">ميكس لحوم<span class="sub">شاورما + برجر + كفتة</span></span><span class="dots"></span><span class="price">170</span></div>
+      <div class="item"><span class="name">ميكس سوبر كرانشي<span class="sub">بانيه + زينجر + كريسبي + استربس</span></span><span class="dots"></span><span class="price">180</span></div>
+      <div class="item"><span class="name">ميكس جبن<span class="sub">رومي + شيدر + كيري + مونتزريلا</span></span><span class="dots"></span><span class="price">120</span></div>
+      <div class="item"><span class="name">بطاطس</span><span class="dots"></span><span class="price">70</span></div>
+      <div class="cat note">إضافة وش جبنة 40 جنيه</div></section>
+
+    <section class="cat" id="crepe-helw">
+      <h2>كريب حلو</h2>
+      <div class="item"><span class="name">نوتيلا سادة</span><span class="dots"></span><span class="price">100</span></div>
+      <div class="item"><span class="name">نوتيلا مكسرات</span><span class="dots"></span><span class="price">110</span></div>
+      <div class="item"><span class="name">نوتيلا موز</span><span class="dots"></span><span class="price">110</span></div>
+      <div class="item"><span class="name">نوتيلا اوريو</span><span class="dots"></span><span class="price">110</span></div>
+      <div class="item"><span class="name">نوتيلا ميكس<span class="sub">مكسرات + موز + اوريو</span></span><span class="dots"></span><span class="price">150</span></div>
+      <div class="item"><span class="name">شيكولاتة سادة</span><span class="dots"></span><span class="price">80</span></div>
+      <div class="item"><span class="name">شيكولاتة مكسرات</span><span class="dots"></span><span class="price">90</span></div>
+      <div class="item"><span class="name">شيكولاتة موز</span><span class="dots"></span><span class="price">90</span></div>
+      <div class="item"><span class="name">شيكولاتة اوريو</span><span class="dots"></span><span class="price">90</span></div>
+      <div class="item"><span class="name">شيكولاتة ميكس<span class="sub">مكسرات + موز + اوريو</span></span><span class="dots"></span><span class="price">130</span></div>
+      </section>
+
+    <section class="cat" id="salatat">
+      <h2>سلطات ومخللات</h2>
+      <div class="cat note">السعر: كبير / وسط</div>
+      <div class="item"><span class="name">سلطة بلدي</span><span class="dots"></span><span class="price">20 / 10</span></div>
+      <div class="item"><span class="name">سلطة طحينة</span><span class="dots"></span><span class="price">20 / 10</span></div>
+      <div class="item"><span class="name">بذنجان مخلل</span><span class="dots"></span><span class="price">20 / 10</span></div>
+      <div class="item"><span class="name">طرشي مشكل بوليفي</span><span class="dots"></span><span class="price">20 / 10</span></div>
+      <div class="item"><span class="name">بطاطس مخلله</span><span class="dots"></span><span class="price">20 / 10</span></div>
+      <div class="item"><span class="name">طماطم مخلله</span><span class="dots"></span><span class="price">20 / 10</span></div>
+      <div class="item"><span class="name">كول سلو</span><span class="dots"></span><span class="price">20 / 10</span></div>
+      <div class="item"><span class="name">تومية عادية</span><span class="dots"></span><span class="price">20 / 10</span></div>
+      <div class="item"><span class="name">تومية سبايسي</span><span class="dots"></span><span class="price">20 / 10</span></div>
+      </section>
+
+    <section class="cat" id="tawagen">
+      <h2>طواجن مزاجنجي</h2>
+      <div class="item"><span class="name">طاجن فول لحمه</span><span class="dots"></span><span class="price">80</span></div>
+      <div class="item"><span class="name">طاجن فول سجق</span><span class="dots"></span><span class="price">80</span></div>
+      <div class="item"><span class="name">طاجن فول بسطرمة</span><span class="dots"></span><span class="price">80</span></div>
+      <div class="item"><span class="name">طاجن فول قشطة</span><span class="dots"></span><span class="price">70</span></div>
+      <div class="item"><span class="name">طاجن مسقعة لحمه</span><span class="dots"></span><span class="price">80</span></div>
+      <div class="item"><span class="name">طاجن مسقعة بسطرمة</span><span class="dots"></span><span class="price">80</span></div>
+      <div class="item"><span class="name">طاجن مسقعة سجق</span><span class="dots"></span><span class="price">80</span></div>
+      <div class="item"><span class="name">طاجن بوره مونتزريلا</span><span class="dots"></span><span class="price">60</span></div>
+      <div class="item"><span class="name">طاجن بوره رومي</span><span class="dots"></span><span class="price">60</span></div>
+      <div class="item"><span class="name">طاجن بوره لحمه</span><span class="dots"></span><span class="price">80</span></div>
+      </section>
+
+    <section class="cat" id="fino">
+      <h2>تكلفة المزاجنجي في الفينو</h2>
+      <div class="item"><span class="name">حلاوة سادة</span><span class="dots"></span><span class="price">22</span></div>
+      <div class="item"><span class="name">حلاوة قشطة</span><span class="dots"></span><span class="price">28</span></div>
+      <div class="item"><span class="name">حلاوة مربى</span><span class="dots"></span><span class="price">28</span></div>
+      <div class="item"><span class="name">حلاوة قشطة مربي<span class="sub">عسل أبيض وحلاوة</span></span><span class="dots"></span><span class="price">32</span></div>
+      <div class="item"><span class="name">سكلانس</span><span class="dots"></span><span class="price">36</span></div>
+      <div class="item"><span class="name">قنبلة المزاجنجي<span class="sub">قشطة ومربى وعسل أبيض وشيكولاتة</span></span><span class="dots"></span><span class="price">40</span></div>
+      </section>
+
+      </main>
 
   <footer>
-    يوجد صالات عائلية مكيفة — <b>المحور المركزي، مول نعمه</b>
+    يوجد صالات عائلية مكيفة — <b>المحور المركزي، مول نعمه، بجوار الموقف الجديد والتوحيد والنور</b>
   </footer>
 
 </body>
